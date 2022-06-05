@@ -29,6 +29,7 @@ func Feed(c *gin.Context) {
 
 	var latestTime time.Time
 	fmt.Println("feed.go : Timestamp ", timeStamp)
+	fmt.Println("feed.go : Timestamp ", timeStamp)
 	times, err := strconv.ParseInt(timeStamp, 10, 64)
 	fmt.Println("feed.go : times ", times, "date : Times ", time.Unix(times/1000, 0))
 	if err == nil {
